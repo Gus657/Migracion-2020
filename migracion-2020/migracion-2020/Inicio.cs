@@ -64,7 +64,7 @@ namespace migracion_2020
 			{
 				tramite.Ingresar_Transacciones(txtNom.Text, noCui, DateTime.Now.ToString("yyyy-MM-dd"));
 				this.Hide();
-				Principal nuevo = new Principal();
+				Tramites nuevo = new Tramites(noCui, txtNom.Text);
 				nuevo.Show();
 			}
 			else
@@ -86,6 +86,18 @@ namespace migracion_2020
 			DataTable table = new DataTable();
 			dt.Fill(table);
 			dataGridView1.DataSource = table;
+		}
+
+		private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+			
+		}
+
+		private void DataGridView1_DoubleClick(object sender, EventArgs e)
+		{
+			this.Hide();
+			Principal nuevo = new Principal();
+			nuevo.Show();
 		}
 	}
 }

@@ -70,3 +70,48 @@ C:\Users\gganp\Desktop\IS\Migracion-2020\migracion-2020\migracion-2020\obj\Debug
 C:\Users\gganp\Desktop\IS\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.dll
 C:\Users\gganp\Desktop\IS\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.dll
 C:\Users\gganp\Desktop\IS\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.exe.config
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.exe
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.dll
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.dll
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.dll
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csprojAssemblyReference.cache
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Cambio.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Recuperar.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Registro.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Inicio.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.LogIn.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Principal.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Properties.Resources.resources
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.GenerateResource.cache
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.CopyComplete
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.exe
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.exe.config
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.exe
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.dll
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.dll
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.dll
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csprojAssemblyReference.cache
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Cambio.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Tramites.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Recuperar.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Registro.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Inicio.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.LogIn.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Principal.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Properties.Resources.resources
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.GenerateResource.cache
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.CoreCompileInputs.cache
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.CopyComplete
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.exe
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.pdb

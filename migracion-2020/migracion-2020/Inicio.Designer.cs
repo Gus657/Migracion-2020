@@ -130,9 +130,9 @@
 			this.label7.ForeColor = System.Drawing.Color.DimGray;
 			this.label7.Location = new System.Drawing.Point(18, 65);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(366, 44);
+			this.label7.Size = new System.Drawing.Size(309, 44);
 			this.label7.TabIndex = 19;
-			this.label7.Text = "Seleccione una transacción, por favor:\r\n\r\n";
+			this.label7.Text = "Seleccione un trámite, por favor:\r\n\r\n";
 			this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label2
@@ -142,9 +142,9 @@
 			this.label2.ForeColor = System.Drawing.Color.DimGray;
 			this.label2.Location = new System.Drawing.Point(29, 402);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(278, 66);
+			this.label2.Size = new System.Drawing.Size(220, 44);
 			this.label2.TabIndex = 20;
-			this.label2.Text = "Cree una nueva transacción\r\n\r\n\r\n";
+			this.label2.Text = "Cree un nuevo trámite\r\n\r\n";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// dataGridView1
@@ -163,7 +163,7 @@
 			this.dataGridView1.ColumnHeadersVisible = false;
 			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
 			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(157)))), ((int)(((byte)(217)))));
 			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -177,6 +177,8 @@
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(802, 211);
 			this.dataGridView1.TabIndex = 21;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+			this.dataGridView1.DoubleClick += new System.EventHandler(this.DataGridView1_DoubleClick);
 			// 
 			// Inicio
 			// 
