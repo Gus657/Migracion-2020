@@ -92,7 +92,7 @@ namespace migracion_2020
 		{
 			
 			this.Hide();
-			Principal nuevo = new Principal();
+			Principal nuevo = new Principal(dataGridView1.CurrentRow.Cells[1].Value.ToString(),noCui);
 			nuevo.Show();
 		}
 

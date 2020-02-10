@@ -45,9 +45,7 @@ namespace migracion_2020
 
 		private void Button1_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-			Principal nuevo = new Principal();
-			nuevo.Show();
+			
 		}
 
 		private void Button1_MouseLeave(object sender, EventArgs e)
@@ -66,7 +64,7 @@ namespace migracion_2020
 			{
 				tramite.Asignar_Tipo_Tramite(nomTramite,noCui,comboBox1.Text);
 				this.Hide();
-				Principal nuevo = new Principal();
+				Principal nuevo = new Principal(nomTramite,noCui);
 				nuevo.Show();
 			}
 			else

@@ -11,9 +11,13 @@ using System.Windows.Forms;
 
 namespace migracion_2020
 {
+	
 	public partial class Principal : Form
 	{
-		string nomTramite, noCui = "";
+		string nom = "";
+		string noCui = "";
+		string noTramite = "";
+		string progreso = "";
 		public void setButtonsColors(Button c)
 		{
 			System.Drawing.Color CelesteGob = System.Drawing.ColorTranslator.FromHtml("#049dd9");
@@ -46,10 +50,17 @@ namespace migracion_2020
 			theTabControl.ItemSize = new Size(0, 1);
 			theTabControl.SizeMode = TabSizeMode.Fixed;
 		}
-		public Principal()
+		public Principal(string nomT, string Cui)
 		{
-		
+			nom = nomT;
+			noCui=Cui;
 			InitializeComponent();
+			SQL_tramites tra = new SQL_tramites();
+			SQL_Usuarios users = new SQL_Usuarios();
+		 	noTramite = tra.ConsultarIdTramites(nom,noCui);
+			progreso = tra.ConsultarProgreso(noTramite);
+			label4.Text = progreso;
+			label3.Text = users.ConsultarNombre(noCui);
 			setButtonsColors(button1);
 
 		}

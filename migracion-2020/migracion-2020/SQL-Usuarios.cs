@@ -19,5 +19,23 @@ namespace migracion_2020
 			command.ExecuteNonQuery();
 
 		}
+
+		public string ConsultarNombre(string cui)
+		{
+
+			string sql = "SELECT nombres_dpi, apellidos_dpi FROM dpis WHERE cui='" + cui + "' LIMIT 1;";
+			string respuesta = "";
+			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcDataReader reader = command.ExecuteReader();
+			if (reader.HasRows)
+			{
+				respuesta = reader.GetValue(0).ToString()+ " "+reader.GetValue(1).ToString();
+			}
+			else
+			{
+				respuesta = "0";
+			}
+			return respuesta;
+		}
 	}
 }

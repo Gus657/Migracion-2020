@@ -47,6 +47,24 @@ namespace migracion_2020
 			}
 			return respuesta;
 		}
+		public string ConsultarProgreso(string idTramite)
+		{
+
+			string sql = "SELECT progreso FROM progreso WHERE id_tramite="+idTramite+" LIMIT 1;";
+			string respuesta = "";
+			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcDataReader reader = command.ExecuteReader();
+			if (reader.HasRows)
+			{
+				respuesta = reader.GetValue(0).ToString();
+			}
+			else
+			{
+				respuesta = "0";
+			}
+			return respuesta;
+		}
+
 
 		public void Asignar_Tipo_Tramite(string nom, string cui, string tipo)
 		{
