@@ -122,6 +122,7 @@
 			this.pictureBox4.Size = new System.Drawing.Size(354, 62);
 			this.pictureBox4.TabIndex = 17;
 			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
 			// 
 			// label7
 			// 
@@ -171,6 +172,7 @@
 			this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
 			this.dataGridView1.Location = new System.Drawing.Point(22, 103);
+			this.dataGridView1.MultiSelect = false;
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowHeadersVisible = false;

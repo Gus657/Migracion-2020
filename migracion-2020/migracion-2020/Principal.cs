@@ -13,6 +13,7 @@ namespace migracion_2020
 {
 	public partial class Principal : Form
 	{
+		string nomTramite, noCui = "";
 		public void setButtonsColors(Button c)
 		{
 			System.Drawing.Color CelesteGob = System.Drawing.ColorTranslator.FromHtml("#049dd9");
@@ -47,6 +48,7 @@ namespace migracion_2020
 		}
 		public Principal()
 		{
+		
 			InitializeComponent();
 			setButtonsColors(button1);
 

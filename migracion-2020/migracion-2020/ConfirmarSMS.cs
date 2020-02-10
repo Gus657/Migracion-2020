@@ -41,7 +41,7 @@ namespace migracion_2020
 			try
 			{
 				WebClient cliente = new WebClient();
-				Stream str = cliente.OpenRead(string.Format("https://platform.clickatell.com/messages/http/send?apiKey=ocLN2GHZTkCpRDnSFNkuQg==&to=50242207518&content=Se+está+restableciendo+contraseña", numero, "Hola"));
+				Stream str = cliente.OpenRead(string.Format("https://platform.clickatell.com/messages/http/send?apiKey=ocLN2GHZTkCpRDnSFNkuQg==&to="+"+50242207518"+"&content=Se+está+restableciendo+contraseña", "+50235572376", "Hola"));
 				StreamReader reader = new StreamReader(str);
 				string resultado = reader.ReadToEnd();
 				Console.WriteLine(resultado);

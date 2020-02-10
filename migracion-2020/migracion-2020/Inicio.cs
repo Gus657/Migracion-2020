@@ -41,12 +41,6 @@ namespace migracion_2020
 			button1.FlatAppearance.BorderColor = AzulGob;
 		}
 
-		private void Button1_Click(object sender, EventArgs e)
-		{
-			this.Hide();
-			Principal nuevo = new Principal();
-			nuevo.Show();
-		}
 
 		private void Button1_MouseLeave(object sender, EventArgs e)
 		{
@@ -63,6 +57,7 @@ namespace migracion_2020
 			if (txtNom.Text != "" && txtNom.Text != " ")
 			{
 				tramite.Ingresar_Transacciones(txtNom.Text, noCui, DateTime.Now.ToString("yyyy-MM-dd"));
+				tramite.Ingresar_Progreso(txtNom.Text, noCui);
 				this.Hide();
 				Tramites nuevo = new Tramites(noCui, txtNom.Text);
 				nuevo.Show();
@@ -95,9 +90,15 @@ namespace migracion_2020
 
 		private void DataGridView1_DoubleClick(object sender, EventArgs e)
 		{
+			
 			this.Hide();
 			Principal nuevo = new Principal();
 			nuevo.Show();
+		}
+
+		private void PictureBox4_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

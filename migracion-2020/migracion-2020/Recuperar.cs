@@ -63,7 +63,9 @@ namespace migracion_2020
 				string tel = log.ConsultarTelUsuario(txtCUI.Text);
 				if (tel != "0")
 				{
+					Console.WriteLine(tel);
 					mess.enviarAviso(tel);
+
 				}
 				this.Hide();
 				Cambio nuevo = new Cambio(txtCUI.Text);

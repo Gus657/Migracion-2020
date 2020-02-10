@@ -64,7 +64,7 @@ namespace migracion_2020
 
 			if (comboBox1.Text != "Tipo de pasaporte" )
 			{
-				
+				tramite.Asignar_Tipo_Tramite(nomTramite,noCui,comboBox1.Text);
 				this.Hide();
 				Principal nuevo = new Principal();
 				nuevo.Show();
