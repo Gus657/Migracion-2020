@@ -39,9 +39,8 @@
     <Reference Include="capaDisenoRecepcion">
       <HintPath>..\dlls\capaDisenoRecepcion.dll</HintPath>
     </Reference>
-    <Reference Include="EntregaDePasaportes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dlls\EntregaDePasaportes.dll</HintPath>
+    <Reference Include="procesoeEntregaDePasaporte">
+      <HintPath>..\..\..\..\PoroyectoVS_EntregaPasaporte\procesoeEntregaDePasaporte\procesoeEntregaDePasaporte\bin\Debug\procesoeEntregaDePasaporte.dll</HintPath>
     </Reference>
     <Reference Include="Solicitud">
       <HintPath>..\dlls\Solicitud.dll</HintPath>

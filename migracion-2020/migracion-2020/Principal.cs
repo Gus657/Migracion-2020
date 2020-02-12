@@ -98,8 +98,9 @@ namespace migracion_2020
 
 		private void Button6_Click(object sender, EventArgs e)
 		{
-			tabControl1.SelectedIndex = 6;
 			setButtonsColors(button6);
+			tabControl1.SelectedIndex = 5;
+            entregaPasaporte1.getCUI(noCui, noTramite);
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
