@@ -13,7 +13,7 @@ namespace migracion_2020
 
 		public OdbcConnection conexion()
 		{
-			OdbcConnection conn = new OdbcConnection("Dsn=GCP");// creacion de la conexion via ODBC
+			OdbcConnection conn = new OdbcConnection("Dsn=Migracion");// creacion de la conexion via ODBC
 			try
 			{
 				conn.Open();
