@@ -62,7 +62,7 @@ namespace migracion_2020
 			label4.Text = progreso;
 			label3.Text = users.ConsultarNombre(noCui);
 			setButtonsColors(button1);
-
+            verifica1.cui = noCui;
 		}
 
 		private void Button1_Click_1(object sender, EventArgs e)

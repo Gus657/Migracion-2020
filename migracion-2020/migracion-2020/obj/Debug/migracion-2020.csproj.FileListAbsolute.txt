@@ -74,10 +74,8 @@ C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.exe
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\migracion-2020.pdb
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.dll
-C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.dll
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.dll
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\capaDisenoRecepcion.pdb
-C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\EntregaDePasaportes.pdb
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Solicitud.pdb
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csprojAssemblyReference.cache
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Cambio.resources
@@ -138,3 +136,5 @@ C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-202
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.csproj.CopyComplete
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.exe
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion-2020.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\procesoeEntregaDePasaporte.pdb
+C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Tramites.resources
