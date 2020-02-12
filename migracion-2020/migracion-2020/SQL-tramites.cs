@@ -10,30 +10,30 @@ namespace migracion_2020
 	class SQL_tramites
 	{
 		SQL_Conexion conectar = new SQL_Conexion();
-		public void Ingresar_Transacciones(string nom, string cui	, string fecha)
+		public void Ingresar_Transacciones(string cui	, string fecha)
 		{
 
-			string sql = "INSERT INTO tramites(nombre_tramite,tipo_tramite,cui,fecha_apertura_tramite,estado_tramite)" +
-				"  VALUES ('" + nom + "','0','" + cui + "','" + fecha + "','Activado');";
+			string sql = "INSERT INTO tramites(tipo_tramite,cui,fecha_apertura_tramite,estado_tramite)" +
+				"  VALUES ('0','" + cui + "','" + fecha + "','Activado');";
 			Console.WriteLine(sql);
 			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
 			command.ExecuteNonQuery();
 
 		}
-		public void Ingresar_Progreso(string nom, string cui)
+		public void Ingresar_Progreso( string cui)
 		{
 
 			string sql = "	INSERT INTO progreso (id_tramite,progreso,estado_progreso)" +
-				"  VALUES ((SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and nombre_tramite='" + nom + "' LIMIT 1), '0%','Activo');";
+				"  VALUES ((SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and estado_tramite='Activado' LIMIT 1), '0%','Activo');";
 			Console.WriteLine(sql);
 			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
 			command.ExecuteNonQuery();
 
 		}
-		public string ConsultarIdTramites(string nom, string cui)
+		public string ConsultarIdTramites( string cui)
 		{
 
-			string sql = "SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and nombre_tramite='" + nom + "' LIMIT 1;";
+			string sql = "SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and estado_tramite='Activado' LIMIT 1;";
 			string respuesta = "";
 			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
 			OdbcDataReader reader = command.ExecuteReader();
@@ -66,11 +66,11 @@ namespace migracion_2020
 		}
 
 
-		public void Asignar_Tipo_Tramite(string nom, string cui, string tipo)
+		public void Asignar_Tipo_Tramite( string cui, string tipo)
 		{
 
 			string sql = "UPDATE tramites SET tipo_tramite='"+tipo+"'" +
-				" WHERE id_tramite="+ConsultarIdTramites(nom,cui)+";";
+				" WHERE id_tramite="+ConsultarIdTramites(cui)+";";
 			Console.WriteLine(sql);
 			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
 			command.ExecuteNonQuery();

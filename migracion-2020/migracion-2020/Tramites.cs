@@ -15,10 +15,9 @@ namespace migracion_2020
 	{
 		string noCui = "";
 		string nomTramite = "";
-		public Tramites(string cui , string nom)
+		public Tramites(string cui)
 		{
 			noCui = cui;
-			nomTramite = nom;
 			InitializeComponent();
 		}
 
@@ -62,7 +61,7 @@ namespace migracion_2020
 
 			if (comboBox1.Text != "Tipo de pasaporte" )
 			{
-				tramite.Asignar_Tipo_Tramite(nomTramite,noCui,comboBox1.Text);
+				tramite.Asignar_Tipo_Tramite(noCui,comboBox1.Text);
 				this.Hide();
 				Principal nuevo = new Principal(nomTramite,noCui);
 				nuevo.Show();

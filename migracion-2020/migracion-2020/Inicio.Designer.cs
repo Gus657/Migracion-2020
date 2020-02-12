@@ -32,15 +32,11 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
 			this.lbl_Titulo1 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.txtNom = new System.Windows.Forms.TextBox();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.label3 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
@@ -69,35 +65,6 @@
 			this.label1.Text = "Nuevo Trámite";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// txtNom
-			// 
-			this.txtNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtNom.Location = new System.Drawing.Point(154, 448);
-			this.txtNom.Name = "txtNom";
-			this.txtNom.Size = new System.Drawing.Size(300, 20);
-			this.txtNom.TabIndex = 15;
-			// 
-			// pictureBox5
-			// 
-			this.pictureBox5.BackgroundImage = global::migracion_2020.Properties.Resources.text_field_ROUND1;
-			this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pictureBox5.Location = new System.Drawing.Point(137, 428);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(331, 62);
-			this.pictureBox5.TabIndex = 14;
-			this.pictureBox5.TabStop = false;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-			this.label3.Location = new System.Drawing.Point(28, 442);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(108, 30);
-			this.label3.TabIndex = 16;
-			this.label3.Text = "Nombre";
-			// 
 			// button1
 			// 
 			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(157)))), ((int)(((byte)(217)))));
@@ -105,7 +72,7 @@
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(480, 441);
+			this.button1.Location = new System.Drawing.Point(201, 454);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(333, 36);
 			this.button1.TabIndex = 18;
@@ -117,7 +84,7 @@
 			// 
 			this.pictureBox4.BackgroundImage = global::migracion_2020.Properties.Resources.button_round;
 			this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pictureBox4.Location = new System.Drawing.Point(470, 428);
+			this.pictureBox4.Location = new System.Drawing.Point(191, 441);
 			this.pictureBox4.Name = "pictureBox4";
 			this.pictureBox4.Size = new System.Drawing.Size(354, 62);
 			this.pictureBox4.TabIndex = 17;
@@ -191,9 +158,6 @@
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.pictureBox4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.txtNom);
-			this.Controls.Add(this.pictureBox5);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.lbl_Titulo1);
 			this.Controls.Add(this.label2);
@@ -206,7 +170,6 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Inicio_FormClosed);
 			this.Load += new System.EventHandler(this.Inicio_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
@@ -218,9 +181,6 @@
 
 		private System.Windows.Forms.Label lbl_Titulo1;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox txtNom;
-		private System.Windows.Forms.PictureBox pictureBox5;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.Label label7;

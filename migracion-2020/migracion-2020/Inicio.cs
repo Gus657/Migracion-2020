@@ -54,18 +54,13 @@ namespace migracion_2020
 		{
 			SQL_tramites tramite = new SQL_tramites();
 
-			if (txtNom.Text != "" && txtNom.Text != " ")
-			{
-				tramite.Ingresar_Transacciones(txtNom.Text, noCui, DateTime.Now.ToString("yyyy-MM-dd"));
-				tramite.Ingresar_Progreso(txtNom.Text, noCui);
+			
+				tramite.Ingresar_Transacciones( noCui, DateTime.Now.ToString("yyyy-MM-dd"));
+				tramite.Ingresar_Progreso( noCui);
 				this.Hide();
-				Tramites nuevo = new Tramites(noCui, txtNom.Text);
+				Principal nuevo = new Principal("",	noCui);
 				nuevo.Show();
-			}
-			else
-			{
-				MessageBox.Show("Por favor coloque un nombre al tramite");
-			}
+		
 			
 		}
 

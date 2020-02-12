@@ -57,7 +57,7 @@ namespace migracion_2020
 			InitializeComponent();
 			SQL_tramites tra = new SQL_tramites();
 			SQL_Usuarios users = new SQL_Usuarios();
-		 	noTramite = tra.ConsultarIdTramites(nom,noCui);
+		 	noTramite = tra.ConsultarIdTramites(noCui);
 			progreso = tra.ConsultarProgreso(noTramite);
 			label4.Text = progreso;
 			label3.Text = users.ConsultarNombre(noCui);
