@@ -15,7 +15,8 @@ namespace migracion_2020
 
 			string sql = "SELECT estado_usuario FROM usuarios WHERE cui='" + cui + "' AND email_usuario='" + email + "';";
 			bool respuesta = false;
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows && reader.GetValue(0).ToString() == "Activo")
 			{
@@ -25,6 +26,7 @@ namespace migracion_2020
 			{
 				respuesta = false;
 			}
+			conectar.Desconexion(con);
 			return respuesta;
 		}
 	}

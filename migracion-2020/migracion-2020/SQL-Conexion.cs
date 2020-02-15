@@ -25,5 +25,18 @@ namespace migracion_2020
 			return conn;
 		}
 
+		public void Desconexion(OdbcConnection conn)
+		{
+			try
+			{
+				conn.Close();
+			}
+			catch (OdbcException)
+			{
+				Console.WriteLine("No Conectó");
+			}
+			
+		}
+
 	}
 }

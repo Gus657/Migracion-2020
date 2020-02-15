@@ -15,9 +15,11 @@ namespace migracion_2020
 
 			string sql = "INSERT INTO tramites(tipo_tramite,cui,fecha_apertura_tramite,estado_tramite)" +
 				"  VALUES ('0','" + cui + "','" + fecha + "','Activado');";
+			OdbcConnection con = conectar.conexion();
 			Console.WriteLine(sql);
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
 
 		}
 		public void Ingresar_Progreso( string cui)
@@ -26,8 +28,10 @@ namespace migracion_2020
 			string sql = "	INSERT INTO progreso (id_tramite,progreso,estado_progreso)" +
 				"  VALUES ((SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and estado_tramite='Activado' LIMIT 1), '0%','Activo');";
 			Console.WriteLine(sql);
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
 
 		}
 		public string ConsultarIdTramites( string cui)
@@ -35,7 +39,8 @@ namespace migracion_2020
 
 			string sql = "SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and estado_tramite='Activado' LIMIT 1;";
 			string respuesta = "";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql,con);
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows)
 			{
@@ -45,6 +50,7 @@ namespace migracion_2020
 			{
 				respuesta = "0";
 			}
+			conectar.Desconexion(con);
 			return respuesta;
 		}
 		public string ConsultarProgreso(string idTramite)
@@ -52,7 +58,8 @@ namespace migracion_2020
 
 			string sql = "SELECT progreso FROM progreso WHERE id_tramite="+idTramite+" LIMIT 1;";
 			string respuesta = "";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows)
 			{
@@ -62,6 +69,7 @@ namespace migracion_2020
 			{
 				respuesta = "0";
 			}
+			conectar.Desconexion(con);
 			return respuesta;
 		}
 
@@ -72,8 +80,10 @@ namespace migracion_2020
 			string sql = "UPDATE tramites SET tipo_tramite='"+tipo+"'" +
 				" WHERE id_tramite="+ConsultarIdTramites(cui)+";";
 			Console.WriteLine(sql);
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
 
 		}
 	}

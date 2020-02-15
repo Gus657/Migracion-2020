@@ -15,8 +15,10 @@ namespace migracion_2020
 
 			string sql = "INSERT INTO usuarios (`cui`, `password_usuario`, `nombre_usuario`, `apellido_usuario`, `email_usuario`, `telefono_usuario`, `estado_usuario`)" +
 				" VALUES ('" + cui + "', MD5('"+pass+"'), '"+nom+"','"+ape+"','"+email+"','"+tel+"','Activo');";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
 
 		}
 
@@ -25,7 +27,8 @@ namespace migracion_2020
 
 			string sql = "SELECT nombres_dpi, apellidos_dpi FROM dpis WHERE cui='" + cui + "' LIMIT 1;";
 			string respuesta = "";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows)
 			{
@@ -35,7 +38,9 @@ namespace migracion_2020
 			{
 				respuesta = "0";
 			}
+			conectar.Desconexion(con);
 			return respuesta;
+
 		}
 	}
 }

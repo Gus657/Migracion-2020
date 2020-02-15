@@ -60,11 +60,73 @@ namespace migracion_2020
 		 	noTramite = tra.ConsultarIdTramites(noCui);
 			progreso = tra.ConsultarProgreso(noTramite);
 			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			label3.Text = users.ConsultarNombre(noCui);
 			setButtonsColors(button1);
             verifica1.cui = noCui;
 		}
-
+		void ConsultarPasos(string progreso)
+		{
+			switch (progreso)
+			{
+				case "0%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one_no;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two_no;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three_no;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four_no;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
+					lblPasoXdeX.Text = "Paso 0 de 5";
+					lblTextoX.Text = "Por favor realice la entrega de susu documentos";
+					break;
+				case "20%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two_no;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three_no;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four_no;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
+					lblPasoXdeX.Text = "Paso 1 de 5";
+					lblTextoX.Text = "Felicidades, sus documentos han sido entregados, por favor espere una respuesta del sistema.";
+					break;
+				case "40%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three_no;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four_no;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
+					lblPasoXdeX.Text = "Paso 2 de 5";
+					lblTextoX.Text = "Sus documentos han sido revisados";
+					break;
+				case "60%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four_no;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
+					lblPasoXdeX.Text = "Paso 3 de 5";
+					lblTextoX.Text = "Felicidades sus documentos han sido aceptados, para realizar el tramite. \n Ahora deberá agendar una cita para llevar a cabo los tramites internos en la Direccion General de Migración. Por favor tome en cuenta los horarios y fechas disponibles al momento de solictar su cita.";
+					break;
+				case "80%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
+					lblPasoXdeX.Text = "Paso 4 de 5";
+					lblTextoX.Text = "Su preceso de gestión está siendo realizado internamiente en la dirección general de migración, por favor sea paciente, en breve terminaremos el proceso.";
+					break;
+				case "100%":
+					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
+					picPaso2.BackgroundImage = global::migracion_2020.Properties.Resources.two;
+					picPaso3.BackgroundImage = global::migracion_2020.Properties.Resources.three;
+					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four;
+					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five;
+					lblPasoXdeX.Text = "Paso 5 de 5";
+					lblTextoX.Text = "Felicidades, su pasaporte está listo, por favor verifique la información antes de aceptarlo.";
+					break;
+				default:
+					break;
+			}
+		}
 		private void Button1_Click_1(object sender, EventArgs e)
 		{
 			setButtonsColors(button1);
@@ -106,11 +168,50 @@ namespace migracion_2020
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			HideAllTabsOnTabControl(tabControl1);
+			SQL_Conexion conectar = new SQL_Conexion();
+			GenerarFecha();
+			conectar.conexion();
 		}
 
 		private void Principal_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			Application.Exit();
+		}
+
+		string GenerarFecha()
+		{
+			string fechaBase = DateTime.Now.ToString("yy-MM");
+			string dia = DateTime.Now.ToString("dd");
+			int selecDia = Convert.ToInt32(dia);
+			Random rdn = new Random();
+			
+			string respuesta = "";
+			if (comboBox1.Text == "Esta Semana")
+			{
+				selecDia += rdn.Next(3);
+			}
+			else if (comboBox1.Text == "La Próxima semana")
+			{
+				selecDia += rdn.Next(10);
+			}
+			else
+			{
+				selecDia += rdn.Next(3);
+			}
+			selecDia += rdn.Next(3)+1;
+			respuesta = fechaBase + "-" + selecDia;
+			Console.WriteLine(respuesta);
+			return respuesta;
+		}
+		string GenerarHora()
+		{
+			string respuesta = "";
+			return respuesta;
+		}
+		private void Button7_Click(object sender, EventArgs e)
+		{
+			SQL_Citas cita = new SQL_Citas();
+			cita.Ingresar_Cita(noCui,"",GenerarFecha(),GenerarHora());
 		}
 	}
 }

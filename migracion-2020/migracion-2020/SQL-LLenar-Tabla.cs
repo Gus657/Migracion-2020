@@ -14,8 +14,9 @@ namespace migracion_2020
 		{
 			
 			string sql = "SELECT id_tramite AS 'Numero Tramite',fecha_apertura_tramite FROM " + tabla + " WHERE cui='"+cui+"'  ;";
-			//SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
-			OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcDataAdapter dataTable = new OdbcDataAdapter(sql,con);
+			conectar.Desconexion(con);
 			return dataTable;
 		}
 	}

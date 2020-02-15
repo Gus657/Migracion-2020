@@ -65,6 +65,7 @@
       <DependentUpon>Cambio.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfirmarSMS.cs" />
+    <Compile Include="SQL-Citas.cs" />
     <Compile Include="Tramites.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +209,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-mini.ico" />
+    <None Include="Resources\five.png" />
+    <None Include="Resources\three-no.png" />
+    <None Include="Resources\two-no.png" />
+    <None Include="Resources\one-no.png" />
     <None Include="Resources\negative-sign.png" />
     <None Include="Resources\correct.png" />
   </ItemGroup>

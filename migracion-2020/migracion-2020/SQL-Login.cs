@@ -16,7 +16,9 @@ namespace migracion_2020
 		
 			string sql = "SELECT estado_usuario FROM usuarios WHERE cui='"+cui+"' AND password_usuario=MD5('"+pass+"');";
 			bool respuesta = false;
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+
+			OdbcCommand command = new OdbcCommand(sql, con );
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows && reader.GetValue(0).ToString()=="Activo")
 			{
@@ -26,6 +28,7 @@ namespace migracion_2020
 			{
 				respuesta = false;
 			}
+			conectar.Desconexion(con);
 			return respuesta;
 		}
 
@@ -35,7 +38,8 @@ namespace migracion_2020
 
 			string sql = "SELECT telefono_usuario FROM usuarios WHERE cui='" + cui + "';";
 			string respuesta = "";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			OdbcDataReader reader = command.ExecuteReader();
 			if (reader.HasRows)
 			{
@@ -45,6 +49,7 @@ namespace migracion_2020
 			{
 				respuesta ="0";
 			}
+			conectar.Desconexion(con);
 			return respuesta;
 		}
 	}
