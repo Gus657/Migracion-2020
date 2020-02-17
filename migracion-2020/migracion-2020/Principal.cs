@@ -61,13 +61,13 @@ namespace migracion_2020
 			InitializeComponent();
 			SQL_tramites tra = new SQL_tramites();
 			SQL_Usuarios users = new SQL_Usuarios();
-		 	noTramite = tra.ConsultarIdTramites(noCui);
-			progreso = tra.ConsultarProgreso(noTramite);
+			progreso = tra.ConsultarProgreso(nom);
 			label4.Text = progreso;
 			ConsultarPasos(progreso);
 			label3.Text = users.ConsultarNombre(noCui);
 			setButtonsColors(button1);
             verifica1.cui = noCui;
+			
 		}
 		void ConsultarPasos(string progreso)
 		{
@@ -165,6 +165,16 @@ namespace migracion_2020
 
 		private void Button5_Click(object sender, EventArgs e)
 		{
+			SQL_Requisitos requisitos = new SQL_Requisitos();
+
+			if (requisitos.ConsultarEntrevista(nom)=="SI")
+			{
+				pictureBox12.BackgroundImage = global::migracion_2020.Properties.Resources.correct;
+			}
+			else
+			{
+				pictureBox12.BackgroundImage = global::migracion_2020.Properties.Resources.no_completo;
+			}
 			setButtonsColors(button5);
 			tabControl1.SelectedIndex = 4;
 		}

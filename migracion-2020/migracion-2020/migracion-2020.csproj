@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="ConfirmarSMS.cs" />
     <Compile Include="SQL-Citas.cs" />
+    <Compile Include="SQL-Requisitos.cs" />
     <Compile Include="Tramites.cs">
       <SubType>Form</SubType>
     </Compile>
