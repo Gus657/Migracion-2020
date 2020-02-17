@@ -247,12 +247,13 @@ namespace migracion_2020
 
 		private void Button8_Click(object sender, EventArgs e)
 		{
-			Document document = new Document(iTextSharp.text.PageSize.A8, 15,10,20,10);
+			Document document = new Document(iTextSharp.text.PageSize.A8, 15,10,30,10);
 			PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(@"PDF\pdf.pdf", FileMode.Create));
 			document.Open();
 			Paragraph paragraph = new Paragraph(lblCita.Text);
 			document.Add(paragraph);
 			document.Close();
+			System.Diagnostics.Process.Start(@"PDF\pdf.pdf");
 		}
 	}
 }
