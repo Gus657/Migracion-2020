@@ -13,9 +13,10 @@ namespace migracion_2020
 		public OdbcDataAdapter llenaTbl(string tabla, string cui)// metodo  que obtinene el contenio de una tabla
 		{
 			
-			string sql = "SELECT id_tramite AS 'Numero Tramite', nombre_tramite,fecha_apertura_tramite FROM " + tabla + " WHERE cui='"+cui+"'  ;";
-			//SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
-			OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conectar.conexion());
+			string sql = "SELECT id_tramite AS 'Numero Tramite',fecha_apertura_tramite FROM " + tabla + " WHERE cui='"+cui+"'  ;";
+			OdbcConnection con = conectar.conexion();
+			OdbcDataAdapter dataTable = new OdbcDataAdapter(sql,con);
+			conectar.Desconexion(con);
 			return dataTable;
 		}
 	}

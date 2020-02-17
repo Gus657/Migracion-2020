@@ -40,9 +40,6 @@ namespace migracion_2020
 
 		private void Button1_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-			Principal nuevo = new Principal();
-			nuevo.Show();
 		}
 
 		private void Button1_MouseLeave(object sender, EventArgs e)

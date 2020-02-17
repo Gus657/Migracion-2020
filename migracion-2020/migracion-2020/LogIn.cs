@@ -57,7 +57,7 @@ namespace migracion_2020
 			{
 				MessageBox.Show("Por favor Verifique los datos ingresados.");
 				DateTime today = DateTime.Today;
-				log.Ingresar_Bitacora(txtCUI.Text, "Falló al interntar ingresar al sistema", today.ToString());
+				log.Ingresar_Bitacora("3525037500101", "Falló al interntar ingresar al sistema", today.ToString());
 			}
 			
 		}

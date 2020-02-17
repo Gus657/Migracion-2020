@@ -14,8 +14,10 @@ namespace migracion_2020
 		{
 
 			string sql = "UPDATE usuarios SET password_usuario=MD5('"+pass+"') WHERE cui='"+cui+"';";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
 
 		}
 	}

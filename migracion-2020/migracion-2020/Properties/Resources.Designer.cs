@@ -103,6 +103,16 @@ namespace migracion_2020.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap five {
+            get {
+                object obj = ResourceManager.GetObject("five", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap five_no {
             get {
                 object obj = ResourceManager.GetObject("five-no", resourceCulture);
@@ -203,6 +213,16 @@ namespace migracion_2020.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap one_no {
+            get {
+                object obj = ResourceManager.GetObject("one-no", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap text_field {
             get {
                 object obj = ResourceManager.GetObject("text-field", resourceCulture);
@@ -243,9 +263,29 @@ namespace migracion_2020.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap three_no {
+            get {
+                object obj = ResourceManager.GetObject("three-no", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap two {
             get {
                 object obj = ResourceManager.GetObject("two", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap two_no {
+            get {
+                object obj = ResourceManager.GetObject("two-no", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

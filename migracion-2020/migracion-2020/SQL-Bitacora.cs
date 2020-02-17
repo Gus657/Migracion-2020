@@ -14,9 +14,11 @@ namespace migracion_2020
 		{
 
 			string sql = "INSERT INTO bitacora_usuarios (cui,accion_bitacora,fecha_bitacora) VALUES ('"+cui+"','"+accion+"','"+fecha+"');";
-			OdbcCommand command = new OdbcCommand(sql, conectar.conexion());
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql,con);
 			command.ExecuteNonQuery();
-		
+			conectar.Desconexion(con);
+
 		}
 	}
 }

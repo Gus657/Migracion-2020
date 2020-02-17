@@ -39,9 +39,14 @@
     <Reference Include="capaDisenoRecepcion">
       <HintPath>..\dlls\capaDisenoRecepcion.dll</HintPath>
     </Reference>
-    <Reference Include="EntregaDePasaportes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dlls\EntregaDePasaportes.dll</HintPath>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="procesoeEntregaDePasaporte">
+      <HintPath>..\..\..\..\PoroyectoVS_EntregaPasaporte\procesoeEntregaDePasaporte\procesoeEntregaDePasaporte\bin\Debug\procesoeEntregaDePasaporte.dll</HintPath>
+    </Reference>
+    <Reference Include="Recepcion">
+      <HintPath>..\..\..\Primer Proyecto\Migracion-2020\Recepcion\Recepcion\bin\Debug\Recepcion.dll</HintPath>
     </Reference>
     <Reference Include="Solicitud">
       <HintPath>..\dlls\Solicitud.dll</HintPath>
@@ -66,6 +71,8 @@
       <DependentUpon>Cambio.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfirmarSMS.cs" />
+    <Compile Include="SQL-Citas.cs" />
+    <Compile Include="SQL-Requisitos.cs" />
     <Compile Include="Tramites.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +150,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -209,6 +217,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-mini.ico" />
+    <None Include="Resources\five.png" />
+    <None Include="Resources\three-no.png" />
+    <None Include="Resources\two-no.png" />
+    <None Include="Resources\one-no.png" />
     <None Include="Resources\negative-sign.png" />
     <None Include="Resources\correct.png" />
   </ItemGroup>
