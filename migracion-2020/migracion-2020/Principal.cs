@@ -1,12 +1,16 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 
 namespace migracion_2020
@@ -148,6 +152,13 @@ namespace migracion_2020
 
 		private void Button4_Click(object sender, EventArgs e)
 		{
+			SQL_Citas cita = new SQL_Citas();
+			if (cita.ConsultarCita(noCui)!="0")
+			{
+				button7.Enabled = false;
+				lblCita.Text = cita.ConsultarCita(noCui);
+			}
+			button8.Enabled = true;
 			setButtonsColors(button4);
 			tabControl1.SelectedIndex = 3;
 		}
@@ -169,7 +180,7 @@ namespace migracion_2020
 		{
 			HideAllTabsOnTabControl(tabControl1);
 			SQL_Conexion conectar = new SQL_Conexion();
-			GenerarFecha();
+			
 			conectar.conexion();
 		}
 
@@ -206,12 +217,42 @@ namespace migracion_2020
 		string GenerarHora()
 		{
 			string respuesta = "";
+			Random rdn = new Random();
+
+
+			if (comboBox2.Text == "Por la Mañana (07 AM - 11 AM)")
+			{
+				respuesta += (7 + rdn.Next(4)).ToString();
+			}
+			else if (comboBox2.Text == "Por la Tarde      (12 PM -  04 PM)")
+			{
+				respuesta += (12 + rdn.Next(4)).ToString();
+			}
+			else
+			{
+				respuesta += (12 + rdn.Next(4)).ToString();
+			}
+			respuesta += ":00:00";
+			Console.WriteLine(respuesta);
 			return respuesta;
 		}
 		private void Button7_Click(object sender, EventArgs e)
 		{
 			SQL_Citas cita = new SQL_Citas();
-			cita.Ingresar_Cita(noCui,"",GenerarFecha(),GenerarHora());
+			cita.Ingresar_Cita(noCui,cita.ConsultarAceptacion(noCui),GenerarFecha(),GenerarHora());
+			lblCita.Text=cita.ConsultarCita(noCui);
+			button8.Enabled = true;
+			button7.Enabled = false;
+		}
+
+		private void Button8_Click(object sender, EventArgs e)
+		{
+			Document document = new Document(iTextSharp.text.PageSize.A8, 15,10,20,10);
+			PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(@"PDF\pdf.pdf", FileMode.Create));
+			document.Open();
+			Paragraph paragraph = new Paragraph(lblCita.Text);
+			document.Add(paragraph);
+			document.Close();
 		}
 	}
 }

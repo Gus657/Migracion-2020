@@ -137,3 +137,5 @@ C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-202
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\procesoeEntregaDePasaporte.pdb
 C:\Users\edgar\Documents\GitHub\Migracion-2020\migracion-2020\migracion-2020\obj\Debug\migracion_2020.Tramites.resources
 C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\procesoeEntregaDePasaporte.pdb
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\itextsharp.dll
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\itextsharp.xml
