@@ -140,8 +140,11 @@ namespace migracion_2020
 
 		private void Button2_Click(object sender, EventArgs e)
 		{
+			MessageBox.Show("Indice procesado: ", noTramite);
 			setButtonsColors(button2);
 			tabControl1.SelectedIndex = 1;
+			recepcion1.ObtenerCui(noCui);
+			recepcion1.ObtenerTramite(noTramite);
 		}
 
 		private void Button3_Click(object sender, EventArgs e)

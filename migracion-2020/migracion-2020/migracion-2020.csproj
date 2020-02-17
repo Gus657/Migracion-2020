@@ -45,6 +45,9 @@
     <Reference Include="procesoeEntregaDePasaporte">
       <HintPath>..\..\..\..\PoroyectoVS_EntregaPasaporte\procesoeEntregaDePasaporte\procesoeEntregaDePasaporte\bin\Debug\procesoeEntregaDePasaporte.dll</HintPath>
     </Reference>
+    <Reference Include="Recepcion">
+      <HintPath>..\..\..\Primer Proyecto\Migracion-2020\Recepcion\Recepcion\bin\Debug\Recepcion.dll</HintPath>
+    </Reference>
     <Reference Include="Solicitud">
       <HintPath>..\dlls\Solicitud.dll</HintPath>
     </Reference>
