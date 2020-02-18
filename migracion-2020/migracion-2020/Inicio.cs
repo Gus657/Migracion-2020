@@ -56,9 +56,9 @@ namespace migracion_2020
 
 			
 				tramite.Ingresar_Transacciones( noCui, DateTime.Now.ToString("yyyy-MM-dd"));
-				tramite.Ingresar_Progreso( noCui);
+				tramite.Ingresar_Progreso(noCui);
 				this.Hide();
-				Principal nuevo = new Principal("",	noCui);
+				Principal nuevo = new Principal(tramite.ConsultarIdTramites(noCui),	noCui);
 				nuevo.Show();
 		
 			

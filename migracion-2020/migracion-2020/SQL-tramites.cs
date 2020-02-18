@@ -27,7 +27,16 @@ namespace migracion_2020
 
 			string sql = "	INSERT INTO progreso (id_tramite,progreso,estado_progreso)" +
 				"  VALUES ((SELECT id_tramite FROM tramites WHERE cui='" + cui + "' and estado_tramite='Activado' LIMIT 1), '0%','Activo');";
-			Console.WriteLine(sql);
+			OdbcConnection con = conectar.conexion();
+			OdbcCommand command = new OdbcCommand(sql, con);
+			command.ExecuteNonQuery();
+			conectar.Desconexion(con);
+
+		}
+		public void ActualizarProgreso(string tramite, string porcentaje)
+		{
+
+			string sql = "UPDATE progreso SET progreso='"+porcentaje+"' WHERE id_tramite="+tramite+"";
 			OdbcConnection con = conectar.conexion();
 			OdbcCommand command = new OdbcCommand(sql, con);
 			command.ExecuteNonQuery();
