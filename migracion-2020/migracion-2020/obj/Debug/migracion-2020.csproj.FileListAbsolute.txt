@@ -171,3 +171,4 @@ C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-202
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\itextsharp.xml
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Recepcion.pdb
 \\Mac\Home\Documents\Universidad\9no somestre\042 Ingenieria de Software\migracion\proyecto - git\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Recepcion.dll.config
+C:\Users\gganp\Desktop\IS\Proyecto 1\Migracion-2020\migracion-2020\migracion-2020\bin\Debug\Recepcion.dll

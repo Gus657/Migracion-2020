@@ -755,10 +755,10 @@
 			// tabPage2
 			// 
 			this.tabPage2.Controls.Add(this.panel4);
-			this.tabPage2.Location = new System.Drawing.Point(4, 28);
+			this.tabPage2.Location = new System.Drawing.Point(4, 25);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(963, 603);
+			this.tabPage2.Size = new System.Drawing.Size(192, 71);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
@@ -770,7 +770,7 @@
 			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel4.Location = new System.Drawing.Point(3, 3);
 			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(957, 597);
+			this.panel4.Size = new System.Drawing.Size(186, 65);
 			this.panel4.TabIndex = 0;
 			// 
 			// panel6
@@ -779,7 +779,7 @@
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel6.Location = new System.Drawing.Point(0, 0);
 			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(957, 597);
+			this.panel6.Size = new System.Drawing.Size(186, 65);
 			this.panel6.TabIndex = 0;
 			// 
 			// recepcion1
@@ -788,15 +788,15 @@
 			this.recepcion1.Location = new System.Drawing.Point(0, 0);
 			this.recepcion1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.recepcion1.Name = "recepcion1";
-			this.recepcion1.Size = new System.Drawing.Size(957, 597);
+			this.recepcion1.Size = new System.Drawing.Size(186, 65);
 			this.recepcion1.TabIndex = 0;
 			// 
 			// tabPage3
 			// 
 			this.tabPage3.Controls.Add(this.panel5);
-			this.tabPage3.Location = new System.Drawing.Point(4, 28);
+			this.tabPage3.Location = new System.Drawing.Point(4, 25);
 			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Size = new System.Drawing.Size(963, 603);
+			this.tabPage3.Size = new System.Drawing.Size(192, 71);
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "tabPage3";
 			this.tabPage3.UseVisualStyleBackColor = true;
@@ -808,7 +808,7 @@
 			this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel5.Location = new System.Drawing.Point(0, 0);
 			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(963, 603);
+			this.panel5.Size = new System.Drawing.Size(192, 71);
 			this.panel5.TabIndex = 0;
 			// 
 			// verifica1
@@ -818,16 +818,16 @@
 			this.verifica1.Location = new System.Drawing.Point(0, 0);
 			this.verifica1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.verifica1.Name = "verifica1";
-			this.verifica1.Size = new System.Drawing.Size(963, 603);
+			this.verifica1.Size = new System.Drawing.Size(192, 71);
 			this.verifica1.TabIndex = 1;
 			// 
 			// tabPage4
 			// 
 			this.tabPage4.BackColor = System.Drawing.Color.White;
 			this.tabPage4.Controls.Add(this.tableLayoutPanel8);
-			this.tabPage4.Location = new System.Drawing.Point(4, 28);
+			this.tabPage4.Location = new System.Drawing.Point(4, 25);
 			this.tabPage4.Name = "tabPage4";
-			this.tabPage4.Size = new System.Drawing.Size(963, 603);
+			this.tabPage4.Size = new System.Drawing.Size(192, 71);
 			this.tabPage4.TabIndex = 3;
 			this.tabPage4.Text = "tabPage4";
 			// 
@@ -847,7 +847,7 @@
 			this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-			this.tableLayoutPanel8.Size = new System.Drawing.Size(963, 603);
+			this.tableLayoutPanel8.Size = new System.Drawing.Size(192, 71);
 			this.tableLayoutPanel8.TabIndex = 0;
 			// 
 			// tableLayoutPanel11
@@ -858,12 +858,12 @@
 			this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel16, 1, 0);
 			this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 405);
+			this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 49);
 			this.tableLayoutPanel11.Name = "tableLayoutPanel11";
 			this.tableLayoutPanel11.RowCount = 1;
 			this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel11.Size = new System.Drawing.Size(957, 195);
+			this.tableLayoutPanel11.Size = new System.Drawing.Size(186, 19);
 			this.tableLayoutPanel11.TabIndex = 2;
 			// 
 			// tableLayoutPanel16
@@ -873,13 +873,13 @@
 			this.tableLayoutPanel16.Controls.Add(this.label9, 0, 1);
 			this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 0, 0);
 			this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel16.Location = new System.Drawing.Point(194, 3);
+			this.tableLayoutPanel16.Location = new System.Drawing.Point(40, 3);
 			this.tableLayoutPanel16.Name = "tableLayoutPanel16";
 			this.tableLayoutPanel16.RowCount = 2;
 			this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
 			this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel16.Size = new System.Drawing.Size(568, 189);
+			this.tableLayoutPanel16.Size = new System.Drawing.Size(105, 13);
 			this.tableLayoutPanel16.TabIndex = 1;
 			// 
 			// label9
@@ -888,9 +888,9 @@
 			this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.ForeColor = System.Drawing.Color.DimGray;
-			this.label9.Location = new System.Drawing.Point(3, 37);
+			this.label9.Location = new System.Drawing.Point(3, 2);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(562, 152);
+			this.label9.Size = new System.Drawing.Size(99, 11);
 			this.label9.TabIndex = 2;
 			this.label9.Text = "\r\nRecurede presentarse 30 minutos antes de su cita en la Dirección General de Mig" +
     "ración.\r\n\r\n\r\n";
@@ -909,7 +909,7 @@
 			this.tableLayoutPanel17.RowCount = 1;
 			this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel17.Size = new System.Drawing.Size(562, 31);
+			this.tableLayoutPanel17.Size = new System.Drawing.Size(99, 1);
 			this.tableLayoutPanel17.TabIndex = 0;
 			// 
 			// button8
@@ -921,9 +921,9 @@
 			this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button8.ForeColor = System.Drawing.Color.White;
-			this.button8.Location = new System.Drawing.Point(115, 3);
+			this.button8.Location = new System.Drawing.Point(22, 3);
 			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(331, 25);
+			this.button8.Size = new System.Drawing.Size(53, 1);
 			this.button8.TabIndex = 20;
 			this.button8.Text = "Imprimir Ticket";
 			this.button8.UseVisualStyleBackColor = false;
@@ -937,12 +937,12 @@
 			this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel14, 1, 0);
 			this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 204);
+			this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 26);
 			this.tableLayoutPanel10.Name = "tableLayoutPanel10";
 			this.tableLayoutPanel10.RowCount = 1;
 			this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel10.Size = new System.Drawing.Size(957, 195);
+			this.tableLayoutPanel10.Size = new System.Drawing.Size(186, 17);
 			this.tableLayoutPanel10.TabIndex = 1;
 			// 
 			// tableLayoutPanel14
@@ -952,13 +952,13 @@
 			this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel15, 0, 0);
 			this.tableLayoutPanel14.Controls.Add(this.lblCita, 0, 1);
 			this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel14.Location = new System.Drawing.Point(194, 3);
+			this.tableLayoutPanel14.Location = new System.Drawing.Point(40, 3);
 			this.tableLayoutPanel14.Name = "tableLayoutPanel14";
 			this.tableLayoutPanel14.RowCount = 2;
 			this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
 			this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel14.Size = new System.Drawing.Size(568, 189);
+			this.tableLayoutPanel14.Size = new System.Drawing.Size(105, 11);
 			this.tableLayoutPanel14.TabIndex = 0;
 			// 
 			// tableLayoutPanel15
@@ -974,7 +974,7 @@
 			this.tableLayoutPanel15.RowCount = 1;
 			this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel15.Size = new System.Drawing.Size(562, 31);
+			this.tableLayoutPanel15.Size = new System.Drawing.Size(99, 1);
 			this.tableLayoutPanel15.TabIndex = 0;
 			// 
 			// button7
@@ -985,9 +985,9 @@
 			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button7.ForeColor = System.Drawing.Color.White;
-			this.button7.Location = new System.Drawing.Point(115, 3);
+			this.button7.Location = new System.Drawing.Point(22, 3);
 			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(331, 25);
+			this.button7.Size = new System.Drawing.Size(53, 1);
 			this.button7.TabIndex = 20;
 			this.button7.Text = "Solicitar Cita";
 			this.button7.UseVisualStyleBackColor = false;
@@ -998,9 +998,9 @@
 			this.lblCita.AutoSize = true;
 			this.lblCita.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.lblCita.Font = new System.Drawing.Font("Century Gothic", 18F);
-			this.lblCita.Location = new System.Drawing.Point(3, 37);
+			this.lblCita.Location = new System.Drawing.Point(3, 2);
 			this.lblCita.Name = "lblCita";
-			this.lblCita.Size = new System.Drawing.Size(562, 152);
+			this.lblCita.Size = new System.Drawing.Size(99, 9);
 			this.lblCita.TabIndex = 1;
 			this.lblCita.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -1017,7 +1017,7 @@
 			this.tableLayoutPanel9.RowCount = 1;
 			this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel9.Size = new System.Drawing.Size(957, 195);
+			this.tableLayoutPanel9.Size = new System.Drawing.Size(186, 17);
 			this.tableLayoutPanel9.TabIndex = 0;
 			// 
 			// tableLayoutPanel12
@@ -1029,13 +1029,13 @@
 			this.tableLayoutPanel12.Controls.Add(this.label8, 1, 1);
 			this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel13, 1, 2);
 			this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel12.Location = new System.Drawing.Point(194, 3);
+			this.tableLayoutPanel12.Location = new System.Drawing.Point(40, 3);
 			this.tableLayoutPanel12.Name = "tableLayoutPanel12";
 			this.tableLayoutPanel12.RowCount = 3;
 			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-			this.tableLayoutPanel12.Size = new System.Drawing.Size(568, 189);
+			this.tableLayoutPanel12.Size = new System.Drawing.Size(105, 11);
 			this.tableLayoutPanel12.TabIndex = 0;
 			// 
 			// label8
@@ -1044,9 +1044,9 @@
 			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.label8.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(157)))), ((int)(((byte)(217)))));
-			this.label8.Location = new System.Drawing.Point(116, 18);
+			this.label8.Location = new System.Drawing.Point(24, 1);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(334, 37);
+			this.label8.Size = new System.Drawing.Size(57, 2);
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Gestione su Cita";
 			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1060,7 +1060,7 @@
 			this.tableLayoutPanel13.Controls.Add(this.comboBox1, 1, 1);
 			this.tableLayoutPanel13.Controls.Add(this.comboBox2, 1, 3);
 			this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel13.Location = new System.Drawing.Point(116, 58);
+			this.tableLayoutPanel13.Location = new System.Drawing.Point(24, 6);
 			this.tableLayoutPanel13.Name = "tableLayoutPanel13";
 			this.tableLayoutPanel13.RowCount = 5;
 			this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -1068,7 +1068,7 @@
 			this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
 			this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel13.Size = new System.Drawing.Size(334, 128);
+			this.tableLayoutPanel13.Size = new System.Drawing.Size(57, 2);
 			this.tableLayoutPanel13.TabIndex = 1;
 			// 
 			// comboBox1
@@ -1080,9 +1080,9 @@
 			this.comboBox1.Items.AddRange(new object[] {
             "Esta semana",
             "La Próxima semana"});
-			this.comboBox1.Location = new System.Drawing.Point(36, 15);
+			this.comboBox1.Location = new System.Drawing.Point(8, 3);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(261, 27);
+			this.comboBox1.Size = new System.Drawing.Size(39, 27);
 			this.comboBox1.TabIndex = 0;
 			this.comboBox1.Text = "Semana";
 			// 
@@ -1095,9 +1095,9 @@
 			this.comboBox2.Items.AddRange(new object[] {
             "Por la Mañana (07 AM - 11 AM)",
             "Por la Tarde      (12 PM -  04 PM)"});
-			this.comboBox2.Location = new System.Drawing.Point(36, 71);
+			this.comboBox2.Location = new System.Drawing.Point(8, 3);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(261, 27);
+			this.comboBox2.Size = new System.Drawing.Size(39, 27);
 			this.comboBox2.TabIndex = 1;
 			this.comboBox2.Text = "Horario";
 			// 
@@ -1524,8 +1524,8 @@
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label lblCita;
-        private Recepcion.Recepcion recepcion1;
         private Solicitud.Verifica verifica1;
         private procesoeEntregaDePasaporte.entregaPasaporte entregaPasaporte1;
-    }
+		private Recepcion.Recepcion recepcion1;
+	}
 }
