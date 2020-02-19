@@ -17,7 +17,7 @@ namespace migracion_2020
 				"(SELECT id_solicitud FROM solicitudes WHERE id_cita=(" +
 				"SELECT id_cita FROM citas WHERE id_aceptacion=(" +
 				"SELECT id_aceptacion FROM aceptaciones_documentos WHERE id_recepcion=(" +
-				"SELECT id_recepcion FROM recepciones_documentos WHERE id_tramite=("+tramite+ ")) AND estado_cita='Activado'))) AND resultado_entrevista!='0' LIMIT 1";
+				"SELECT id_recepcion FROM recepciones_documentos WHERE id_tramite=("+tramite+ ")) AND estado_cita='Activado' LIMIT 1)LIMIT 1)LIMIT 1) AND resultado_entrevista!='0' LIMIT 1";
 			string respuesta = "";
 			OdbcConnection con = conectar.conexion();
 			OdbcCommand command = new OdbcCommand(sql, con);

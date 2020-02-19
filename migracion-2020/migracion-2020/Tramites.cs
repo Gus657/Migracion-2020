@@ -15,9 +15,10 @@ namespace migracion_2020
 	{
 		string noCui = "";
 		string nomTramite = "";
-		public Tramites(string cui)
+		public Tramites(string cui, string nomTra)
 		{
 			noCui = cui;
+			nomTramite = nomTra;
 			InitializeComponent();
 		}
 

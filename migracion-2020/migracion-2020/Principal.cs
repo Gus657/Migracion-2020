@@ -154,6 +154,7 @@ namespace migracion_2020
 			ConsultarPasos(progreso);
 			recepcion1.ObtenerCui(noCui);
 			recepcion1.ObtenerTramite(noTramite);
+			button3.Enabled = true;
 		}
 
 		private void Button3_Click(object sender, EventArgs e)
@@ -165,6 +166,8 @@ namespace migracion_2020
 			label4.Text = progreso;
 			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 2;
+			button4.Enabled = true;
+
 		}
 
 		private void Button4_Click(object sender, EventArgs e)
@@ -183,6 +186,7 @@ namespace migracion_2020
 			label4.Text = progreso;
 			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 3;
+			button5.Enabled = true;
 		}
 
 		private void Button5_Click(object sender, EventArgs e)
@@ -222,6 +226,7 @@ namespace migracion_2020
 			label4.Text = progreso;
 			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 4;
+			button6.Enabled = true;
 		}
 
 		private void Button6_Click(object sender, EventArgs e)
@@ -240,7 +245,11 @@ namespace migracion_2020
 		{
 			HideAllTabsOnTabControl(tabControl1);
 			SQL_Conexion conectar = new SQL_Conexion();
-			
+			button3.Enabled = false;
+			button4.Enabled = false;
+			button5.Enabled = false;
+			button6.Enabled = false;
+
 			conectar.conexion();
 		}
 
