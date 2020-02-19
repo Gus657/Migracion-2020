@@ -56,6 +56,7 @@ namespace migracion_2020
 		}
 		public Principal(string nomT, string Cui)
 		{
+            noTramite = nomT;
 			nom = nomT;
 			noCui=Cui;
 			InitializeComponent();
