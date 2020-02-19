@@ -56,12 +56,10 @@ namespace migracion_2020
 
 			
 				tramite.Ingresar_Transacciones( noCui, DateTime.Now.ToString("yyyy-MM-dd"));
-				tramite.Ingresar_Progreso( noCui);
+				tramite.Ingresar_Progreso(noCui);
 				this.Hide();
-				Principal nuevo = new Principal("",	noCui);
-				nuevo.Show();
-		
-			
+				Tramites tra = new Tramites(noCui, tramite.ConsultarIdTramites(noCui));
+				tra.Show();
 		}
 
 		private void Inicio_FormClosed(object sender, FormClosedEventArgs e)

@@ -92,9 +92,9 @@
 			this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(157)))), ((int)(((byte)(217)))));
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
-            "Mayor de edad",
-            "Menor de edad",
-            "Adulto Mayor de 60 años"});
+            "Mayor",
+            "Menor",
+            "Mayor 60"});
 			this.comboBox1.Location = new System.Drawing.Point(36, 138);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(332, 27);

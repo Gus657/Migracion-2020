@@ -56,6 +56,7 @@ namespace migracion_2020
 		}
 		public Principal(string nomT, string Cui)
 		{
+            noTramite = nomT;
 			nom = nomT;
 			noCui=Cui;
 			InitializeComponent();
@@ -80,7 +81,7 @@ namespace migracion_2020
 					picPaso4.BackgroundImage = global::migracion_2020.Properties.Resources.four_no;
 					picPaso5.BackgroundImage = global::migracion_2020.Properties.Resources.five_no;
 					lblPasoXdeX.Text = "Paso 0 de 5";
-					lblTextoX.Text = "Por favor realice la entrega de susu documentos";
+					lblTextoX.Text = "Por favor realice la entrega de su documentos";
 					break;
 				case "20%":
 					picPaso1.BackgroundImage = global::migracion_2020.Properties.Resources.one;
@@ -134,23 +135,39 @@ namespace migracion_2020
 		private void Button1_Click_1(object sender, EventArgs e)
 		{
 			setButtonsColors(button1);
+			SQL_tramites tra = new SQL_tramites();
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 0;
 		
 		}
 
 		private void Button2_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Indice procesado: ", noTramite);
 			setButtonsColors(button2);
 			tabControl1.SelectedIndex = 1;
+			SQL_tramites tra = new SQL_tramites();
+			tra.ActualizarProgreso(nom, "20%");
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			recepcion1.ObtenerCui(noCui);
 			recepcion1.ObtenerTramite(noTramite);
+			button3.Enabled = true;
 		}
 
 		private void Button3_Click(object sender, EventArgs e)
 		{
 			setButtonsColors(button3);
+			SQL_tramites tra = new SQL_tramites();
+			tra.ActualizarProgreso(nom, "40%");
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 2;
+			button4.Enabled = true;
+
 		}
 
 		private void Button4_Click(object sender, EventArgs e)
@@ -163,13 +180,19 @@ namespace migracion_2020
 			}
 			button8.Enabled = true;
 			setButtonsColors(button4);
+			SQL_tramites tra = new SQL_tramites();
+			tra.ActualizarProgreso(nom, "60%");
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 3;
+			button5.Enabled = true;
 		}
 
 		private void Button5_Click(object sender, EventArgs e)
 		{
 			SQL_Requisitos requisitos = new SQL_Requisitos();
-
+			// ENTREVISTA
 			if (requisitos.ConsultarEntrevista(nom)=="SI")
 			{
 				pictureBox12.BackgroundImage = global::migracion_2020.Properties.Resources.correct;
@@ -178,13 +201,42 @@ namespace migracion_2020
 			{
 				pictureBox12.BackgroundImage = global::migracion_2020.Properties.Resources.no_completo;
 			}
+			// FOTO
+			if (requisitos.ConsultarPasaporte(noCui) == "SI")
+			{
+				pictureBox13.BackgroundImage = global::migracion_2020.Properties.Resources.correct;
+			}
+			else
+			{
+				pictureBox13.BackgroundImage = global::migracion_2020.Properties.Resources.no_completo;
+			}
+			//ORDEN
+			if (requisitos.ConsultarOrdendeImpresion(noCui) == "SI")
+			{
+				pictureBox14.BackgroundImage = global::migracion_2020.Properties.Resources.correct;
+			}
+			else
+			{
+				pictureBox14.BackgroundImage = global::migracion_2020.Properties.Resources.no_completo;
+			}
 			setButtonsColors(button5);
+			SQL_tramites tra = new SQL_tramites();
+			tra.ActualizarProgreso(nom, "80%");
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 4;
+			button6.Enabled = true;
 		}
 
 		private void Button6_Click(object sender, EventArgs e)
 		{
 			setButtonsColors(button6);
+			SQL_tramites tra = new SQL_tramites();
+			tra.ActualizarProgreso(nom, "100%");
+			progreso = tra.ConsultarProgreso(nom);
+			label4.Text = progreso;
+			ConsultarPasos(progreso);
 			tabControl1.SelectedIndex = 5;
             entregaPasaporte1.getCUI(noCui, noTramite);
 		}
@@ -193,7 +245,11 @@ namespace migracion_2020
 		{
 			HideAllTabsOnTabControl(tabControl1);
 			SQL_Conexion conectar = new SQL_Conexion();
-			
+			button3.Enabled = false;
+			button4.Enabled = false;
+			button5.Enabled = false;
+			button6.Enabled = false;
+
 			conectar.conexion();
 		}
 
